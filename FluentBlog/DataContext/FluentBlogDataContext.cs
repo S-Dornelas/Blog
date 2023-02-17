@@ -13,7 +13,7 @@ namespace FluentBlog.Data
         public DbSet<User>? Users { get; set; }
 
         protected override void OnConfiguring (DbContextOptionsBuilder options)
-            =>options.UseSqlServer(@"Password=Dornelas;Persist Security Info=True;User ID=sa;Initial Catalog=FluentBlog;Data Source=DORNELAS;Trust Server Certificate=true");
+            =>options.UseSqlServer("");
 
         protected override void OnModelCreating (ModelBuilder modelBuilder)
         {
